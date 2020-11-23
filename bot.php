@@ -90,7 +90,7 @@ Checked By @$username***",
 'parse_mode'=>"MarkDown",
 ]);
     }
-else if ($text == '/commands'){
+elseif ($text == '/commands') {
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
                 'text' =>"***COMMANDS
