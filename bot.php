@@ -102,6 +102,8 @@ bot('sendmessage', [
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
                 'text' =>"INVALID BIN❌"
+		
+	}
 
                
 ]);
