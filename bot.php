@@ -98,6 +98,7 @@ bot('sendmessage', [
 		/bin xxxxx
 		
 		Thanks for using our bot***",
+	}
 	else {
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
