@@ -50,7 +50,11 @@ $chatid = $update->callback_query->message->chat->id;
 if($text == '/start')
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
-                'text' =>"$START_MESSAGE",
+                'text' =>"***Hi @$username
+
+This is a bin checker bot
+
+Powered by @TheDynamicNetwork***",
 'parse_mode'=>"MarkDown",
 ]);
 if(strpos($text,"/bin") !== false){ 
@@ -86,10 +90,19 @@ Checked By @$username***",
 'parse_mode'=>"MarkDown",
 ]);
     }
-else {
+else if ($text == '/commands'){
 bot('sendmessage', [
                 'chat_id' =>$chat_id,
-                'text' =>"INVALID BIN❌",
+                'text' =>"***COMMANDS
+		
+		/bin xxxxx
+		
+		Thanks for using our bot***",
+	else {
+bot('sendmessage', [
+                'chat_id' =>$chat_id,
+                'text' =>"INVALID BIN❌"
+
                
 ]);
 }
